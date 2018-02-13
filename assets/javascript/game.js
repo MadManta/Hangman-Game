@@ -1,33 +1,28 @@
-// VARIABLES
-// ---------------------
+console.log("hey girl chill out, you can do this ok?");
 
-// There are a variety of words available
+// List of words for game
+var hangmanWords = ["apple", "orange", "grape", "banana", "watermelon"];
 
-// There is a score starting from zero
+// Randomly selected word from array
+var word = hangmanWords[Math.floor(Math.random() * hangmanWords.length)];
 
-// There are "tries" starting from 12 going down to 0
+// Starting score
+var score = 0;
+
+// Starting try number
+var tries = 10;
+
+// Word translated into blanks to be solved
+var underScore = [];
+    for (i = 0; i < word.length; i++) {
+        underScore[i] = "_" + " ";
+    };
+
+// HTML ID for blank word
+document.getElementById("wordlist").innerHTML = underScore.join(" ");
 
 
 
-// FUNCTIONS
-// ---------------------
 
 
-
-
-// MAIN GAME
-// ---------------------
-
-// Call function to begin the game
-
-// When player presses a key, it will run the following function
-
-// If you guess correctly, the letter(s) fill in the word
-
-// If you guess incorerctly, "tries" goes down by 1
-
-// If you guess the whole word, your score goes up by 1 and game ends
-
-// If "tries" reaches 0, you lose and game ends
-
-// When game ends a new word loads automatically
+ 
