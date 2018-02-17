@@ -1,3 +1,17 @@
 body {
     background-color:lightblue;
+    font-family: 'Bellefair', serif;
+}
+
+.word {
+    font-size:30pt;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width:1000px;
+}
+
+.centered {
+    text-align:center;
 }
